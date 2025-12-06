@@ -1,0 +1,107 @@
+body{
+    margin-top: 5%;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat", sans-serif; 
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+}
+
+section{
+    color: white;
+    width: 388px;
+    height: 698px;          
+}
+
+button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 324px;
+    height: 48px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 700;
+    border: 1px solid #7c7c7c;
+    color: white;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.login-button:hover{
+    border-color: white;
+}
+
+form{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    background-color: rgba(0, 0, 0, 0);
+    width: 324px;
+    color: white;
+    height: 48px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #7c7c7c;
+    text-indent: 10px;
+}
+
+input:hover{
+    border-color: white;
+
+}
+
+#suivant{
+    color:#121212;
+    background-color: #1ed760;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 324px;
+    height: 48px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#suivant:hover{
+    color:#121212;
+    background-color: #56e086;
+    border: none;
+}
+
+#name{
+    margin-bottom: 18px;
+}
+
+
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label{
+    font-weight: 600;
+    align-self: flex-start;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
