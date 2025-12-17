@@ -1,25 +1,65 @@
+* { /* Reset css */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    margin: 5%;
-    background-color: #121212;
+    background-color: #000000;
     font-family: "Montserrat", sans-serif;
 }
 
-.header{
+/* NavBar */
 
-}
-
-h1{
+header{
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    padding: 10px;
+    padding: 3vh;
     color: white;
     background-color: #1ed760;
-    font-weight: 700;
-    font-size: 42px;
 }
 
-section{
+header h1{
+    font-size: 2rem;
+}
 
+header button{
+    border: 2px solid #404040;
+    background-color: #1F1F1F;
+    color: white;
+    border-radius: 50%;
+    padding: 1%;
+}
+
+header button:hover, header input:hover, header a:hover{
+    background-color: #2A2A2A;
+}
+
+header input{
+    border: 1px solid #404040;
+    background-color: #1F1F1F;
+    color: white;
+    border-radius: 20px;
+    padding: 1%;
+}
+
+header a{
+    border: 2px solid #404040;
+    background-color: #1F1F1F;
+    color: white;
+    border-radius: 50%;
+    padding: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+section{
+    background-color: #121212;
 }
