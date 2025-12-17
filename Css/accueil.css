@@ -1,0 +1,25 @@
+body{
+    margin: 5%;
+    background-color: #121212;
+    font-family: "Montserrat", sans-serif;
+}
+
+.header{
+
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    background-color: #1ed760;
+    font-weight: 700;
+    font-size: 42px;
+}
+
+section{
+
+}
