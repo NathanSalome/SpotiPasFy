@@ -8,18 +8,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="../JavaScript/Script.js"></script>
-    <title>SpotiPasFy</title> 
+    <title>SpotiPasFy</title>
+    <script src="../JavaScript/Script.js" defer></script>
 </head>
 <body>
+    <!-- NavBar / Header -->
     <header>
-        <h1 id="welcome"></h1>
         <a href="Accueil.html"><img class="logo" src="../Image/home.png" alt="Home" width="20px"></a>
-        <input type="search" id="search" placeholder="Que voulez vous écouter ?">
-        <button id="search-button"><img src="../Image/search.png" alt="Loop recherche" width="20px"></button>
+        <nav>
+            <input type="search" id="search" placeholder="Que voulez vous écouter ?">
+            <button id="search-button"><img src="../Image/search.png" alt="Loop recherche" width="20px" onclick="searchMusic()"></button>
+        </nav>
+        <h1 id="welcome"></h1>
     </header>
-    <section>
 
+    <!-- Contenu  -->
+    <section class="container">
+        <div class="un">
+        </div>
+        <div class="deux">
+        </div>
+    </section>
+
+    <!-- Bar musique -->
+    <section>
+        <audio id="audio" controls></audio>
     </section>
 </body>
 </html>

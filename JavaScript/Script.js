@@ -17,9 +17,9 @@ function nameutilisateur() {
     const username = localStorage.getItem("spotypasfyUser");
 
     if (username) {
-        document.getElementById("welcome").textContent = "Bienvenue, "+ username + " 🎧";
+        document.getElementById("welcome").textContent = username;
     } else {
-        document.getElementById("welcome").textContent = "Bienvenue sur SpotiPasFy 🎶";
+        document.getElementById("welcome").textContent = "SpotiPasFy";
     }
 }
 
@@ -39,6 +39,14 @@ function searchMusic() {
             `;
         })
 }
+
+// charger audio essai
+const audio = document.getElementById("audio");
+
+audio.src = "https://prod-1.storage.jamendo.com/?trackid=689544&format=mp31&from=pjD1izJuTouXCGt4TVXLag%3D%3D%7CrN8ixgAAmn3%2FcS%2BcgsVWOg%3D%3D";
+audio.load();
+
+
 
 
 
