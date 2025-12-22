@@ -40,7 +40,11 @@ function searchMusic() {
         })
 }
 
-
+function PlayAlbum(lienAlbum) {
+    let audio = document.getElementById("audio");
+    audio.src = lienAlbum;
+    audio.play();
+}
 
 /* FILM INFO
 function searchMovie() {
