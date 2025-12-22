@@ -80,7 +80,7 @@ nav{
     min-height: 90vh;
 }
 
-.un {
+.container-un {
     background-color: #202020;
     grid-column: 1 / 1;
     grid-row: 1/4;
@@ -89,13 +89,30 @@ nav{
     bottom: 0;
 }
 
-.deux {
+.container-deux {
+    color: white;
     background-color: #202020;
     grid-column: 2/4;
     grid-row: 1/3;
     border-radius: 10px;
     margin-right: 1%;
     bottom: 0;
+}
+
+.container-deux h2{
+    text-align: start;
+    margin: 3vh;
+}
+
+.container-playlist .album img{
+    border-radius: 10px;
+}
+
+.container-playlist{
+    overflow: hidden;
+    display: flex;
+    gap: 7%;
+    margin: 2%;
 }
 
 
