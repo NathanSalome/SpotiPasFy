@@ -108,6 +108,10 @@ nav{
     border-radius: 10px;
 }
 
+.container-playlist .album p:nth-child(2){
+    font-weight: bold;
+}
+
 .container-playlist{
     overflow: hidden;
     display: flex;
