@@ -120,9 +120,17 @@ nav{
     margin: 2%;
 }
 
-.container-tendance{
+.container-tendance:nth-child(1){
     display: flex;
-    margin: 2%;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    margin-left: 2%;
+    gap: 1%;
+}
+
+.container-tendance:nth-child(2){
+    display: flex;
+    margin-left: 2%;
     gap: 1%;
 }
 
