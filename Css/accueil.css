@@ -96,7 +96,7 @@ nav{
     border-radius: 10px;
     margin-right: 1%;
     grid-row: 1/3;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .container-deux h2{
@@ -118,6 +118,24 @@ nav{
     display: flex;
     gap: 7%;
     margin: 2%;
+}
+
+.container-tendance{
+    display: flex;
+    margin: 2%;
+    gap: 1%;
+}
+
+.container-tendance div{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 5%;
+    border-radius: 5px;
+    background-color: rgba(83, 90, 97, 0.22);
+    width: 35%;
+    height: 8vh;
 }
 
 
