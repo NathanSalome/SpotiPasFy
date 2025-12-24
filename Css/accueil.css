@@ -108,6 +108,12 @@ nav{
 .container-playlist .album img{
     border-radius: 10px;
     cursor: pointer;
+    padding: 5%;
+}
+
+.container-playlist .album:hover{
+    background-color: #4a4949;
+    border-radius: 10px;
 }
 
 .container-playlist .album p:nth-child(2){
@@ -146,6 +152,10 @@ nav{
     height: 8vh;
 }
 
+.container-tendance div:hover{
+    background-color: #4a4949;
+}
+
 
 /*=================*/
 /*   Bar audio     */
@@ -161,4 +171,8 @@ section:nth-child(3) {
     color: white;
     display: flex;
     justify-content: center;
+}
+
+audio{
+    border-radius: 20px;
 }
