@@ -22,9 +22,10 @@ function nameutilisateur() {
         document.getElementById("welcome").textContent = "SpotiPasFy";
     }
 }
-
 // charge des que la page est open
 window.onload = nameutilisateur;
+
+// Search
 
 function searchMusic() {
     let input = document.getElementById("search").value;
@@ -40,11 +41,30 @@ function searchMusic() {
         })
 }
 
+// Lancer audio
 function PlayAlbum(lienAlbum) {
     let audio = document.getElementById("audio");
     audio.src = lienAlbum;
     audio.play();
 }
+
+// Catalogue
+
+function Catalogue() {
+    const url = "https://api.jamendo.com/v3.0/tracks?client_id=f8ac19b7&format=json&limit=10&pop=rnb&offset=20";
+    fetch(url)
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* FILM INFO
 function searchMovie() {

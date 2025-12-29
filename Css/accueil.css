@@ -94,9 +94,61 @@ nav{
 /*=================*/
 /*Cont-Header  Bibl*/
 /*=================*/
-.container-biblothèque{
+.container-Result{
     margin: 2%;
 }
+
+.btn-add-playlist{
+    color: white;
+    background-color: #202020;
+    border: none;
+    font-weight: bold;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.btn-add-playlist:hover{
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+.container-un div:nth-child(2){
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.container-un div:nth-child(2) button{
+    color: white;
+    font-weight: bold;
+    background-color: rgba(83, 90, 97, 0.22);
+    border-radius: 40px;
+    font-size: 1.1rem;
+    border: none;
+    padding: 1.2vh;
+}
+/*=================*/
+/*  Result Search  */
+/*=================*/
+
+#container-Search{
+    margin: 3%;
+    background-color: #263d35;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.result-search{
+    width: 85%;
+    height: 87%;
+    background-color: #1ed760;
+    border: solid #4dabb6 4px;
+    border-radius: 15px;
+}
+
+
+
 
 
 
@@ -113,7 +165,7 @@ nav{
     overflow-y: auto;
 }
 
-.header-bibliotheque{
+.header-Result{
     display: flex;
     justify-content: space-between;
     margin: 2%;
