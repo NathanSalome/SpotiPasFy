@@ -34,7 +34,6 @@ function searchMusic() {
         .then(response => response.json())
         .then(data => {
             let search = document.getElementById("contenu");
-
             search.innerHTML = `
                 
             `;
