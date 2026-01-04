@@ -29,13 +29,15 @@ window.onload = nameutilisateur;
 
 function searchMusic() {
     let input = document.getElementById("search").value;
-    let url = "https://api.jamendo.com/v3.0/tracks/?client_id=f8ac19b7&format=jsonpost&namesearch= " + input;
+    let url = "https://api.jamendo.com/v3.0/tracks?client_id=f8ac19b7&format=json&fuzzytags=" + input;
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            let search = document.getElementById("contenu");
+            let search = document.getElementById("container-Search");
             search.innerHTML = `
-                
+                <div>
+                    <p>${data.name}</p>
+                </div>
             `;
         })
 }
@@ -46,23 +48,6 @@ function PlayAlbum(lienAlbum) {
     audio.src = lienAlbum;
     audio.play();
 }
-
-// Catalogue
-
-function Catalogue() {
-    const url = "https://api.jamendo.com/v3.0/tracks?client_id=f8ac19b7&format=json&limit=10&pop=rnb&offset=20";
-    fetch(url)
-}
-
-
-
-
-
-
-
-
-
-
 
 
 /* FILM INFO
