@@ -81,7 +81,10 @@ nav{
 }
 
 .container-un {
-    background-color: #202020;
+    /* background-color: #202020; */
+    background-image: url("../Image/Gemini_Generated_Image_d50znsd50znsd50z.png");
+    background-position: left;
+    background-size: 126rem;
     grid-column: 1 / 1;
     border-radius: 10px;
     margin-left: 2%;
@@ -142,7 +145,7 @@ nav{
 .result-search{
     width: 85%;
     height: 87%;
-    background-color: #1ed760;
+    /* background-color: #1ed760; */
     border: solid #4dabb6 4px;
     border-radius: 15px;
 }
@@ -157,7 +160,10 @@ nav{
 /*=================*/
 .container-deux {
     color: white;
-    background-color: #202020;
+    background-image: url("../Image/Gemini_Generated_Image_d50znsd50znsd50z.png");
+    background-position: right;
+    background-size: 100rem;
+    /* background-color: #202020; */
     grid-column: 2/4;
     border-radius: 10px;
     margin-right: 1%;
