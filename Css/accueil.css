@@ -131,10 +131,34 @@ nav{
 /*  Result Search  */
 /*=================*/
 
-#container-Search{ 
+#container-Search{
     margin: 3%;
-    background-color: #263d35;
     height: 100%;
+    overflow: auto;
+}
+
+.container-result-search{
+    display: flex;
+    flex-direction: column;
+}
+.result-search{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+    align-items: center;
+    font-weight: bold;
+}
+
+.container-result-search:nth-child(even) .result-search{
+    background-color: rgba(83, 90, 97, 0.22);
+}
+
+.container-result-search:nth-child(even):hover .result-search{
+    background-color: #202020;
+}
+
+.container-result-search:nth-child(oddw):hover .result-search{
+    background-color: rgba(83, 90, 97, 0.22);
 }
 
 /*=================*/

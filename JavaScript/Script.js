@@ -34,11 +34,18 @@ function searchMusic() {
         .then(response => response.json())
         .then(data => {
             let search = document.getElementById("container-Search");
-            search.innerHTML = `
-                <div>
-                    <p>${data.name}</p>
+            search.innerHTML = "";
+
+            data.results.forEach(track => {
+                search.innerHTML += `
+                <div class="container-result-search">
+                    <div class="result-search" onclick="PlayAlbum('${track.audio}')">
+                        <img src="${track.album_image}" width="15%">
+                        <p>${track.name}</p>
+                    </div>
                 </div>
-            `;
+                `
+            })
         })
 }
 
@@ -48,42 +55,3 @@ function PlayAlbum(lienAlbum) {
     audio.src = lienAlbum;
     audio.play();
 }
-
-
-/* FILM INFO
-function searchMovie() {
-    let input = document.getElementById("search").value;
-
-    let url = "https://www.omdbapi.com/?t=" + input + "&apikey=ad8d9532";
-
-    fetch(url)
-        .then(response => response.json())
-        .then(data => {
-            let search = document.getElementById("contenu");
-
-            search.innerHTML = `
-                <div class="img-film">
-                    <img class="img-film" src="${data.Poster}" alt="Affiche du film ${data.Title}">
-                </div>
-                <div class="info">
-                    <h1>Titre : ${data.Title}</h1>
-                    <p><strong>Genre :</strong> ${data.Genre}</p>
-                    <p><strong>Réalisé :</strong> ${data.Released}</p>
-                    <p><strong>Directeur :</strong> ${data.Director}</p>
-                    <p><strong>Acteurs :</strong> ${data.Actors}</p>
-                    <p><strong>Langue :</strong> ${data.Language}</p>
-                    <p><strong>Awards :</strong> ${data.Awards}</p>
-                    <p><strong>durée :</strong> ${data.Runtime}ute</p>
-                </div>
-                <div class="Plot">
-                    <h2>Résumée : </h2>
-                    <p>${data.Plot}</p>
-                </div>
-                `
-
-        })
-        .catch(error => {
-            console.error("Erreur :", error);
-        });
-}
-*/
